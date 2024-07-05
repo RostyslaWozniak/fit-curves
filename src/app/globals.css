@@ -1,33 +1,66 @@
+/** @format */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: 0 100% 93.9%;
+    --foreground: 285 23% 27%;
+    --card: 285 50% 90%;
+    --card-foreground: 285 5% 15%;
+    --popover: 285 100% 95%;
+    --popover-foreground: 285 100% 10%;
+    --primary: 285 28.2% 54.1%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 320 75.2% 60.4%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 247 30% 85%;
+    --muted-foreground: 285 5% 35%;
+    --accent: 247 30% 80%;
+    --accent-foreground: 285 5% 15%;
+    --destructive: 0 100% 30%;
+    --destructive-foreground: 285 5% 90%;
+    --border: 285 30% 50%;
+    --input: 285 30% 26%;
+    --ring: 285 28.2% 54.1%;
+    --radius: 1.5rem;
+  }
+  .dark {
+    --background: 285 50% 10%;
+    --foreground: 285 5% 90%;
+    --card: 285 50% 10%;
+    --card-foreground: 285 5% 90%;
+    --popover: 285 50% 5%;
+    --popover-foreground: 285 5% 90%;
+    --primary: 285 28.2% 54.1%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 285 30% 20%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 247 30% 25%;
+    --muted-foreground: 285 5% 60%;
+    --accent: 247 30% 25%;
+    --accent-foreground: 285 5% 90%;
+    --destructive: 0 100% 30%;
+    --destructive-foreground: 285 5% 90%;
+    --border: 285 30% 26%;
+    --input: 285 30% 26%;
+    --ring: 285 28.2% 54.1%;
+    --radius: 1.5rem;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
