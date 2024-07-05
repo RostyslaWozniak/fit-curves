@@ -5,7 +5,7 @@ import { MaxWidthWrapper } from "@/components/max-width-wrapper";
 
 export const WhyUsSection = () => {
   return (
-    <section className="flex min-h-[500px] flex-col items-center justify-center gap-10 pt-10 md:px-10 md:pb-0">
+    <section className="flex min-h-[500px] flex-col items-center justify-center gap-10 py-10 md:px-10 md:pb-0">
       <MaxWidthWrapper>
         <div className="relative flex min-h-32 w-full items-center justify-center">
           <Image

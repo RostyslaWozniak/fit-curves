@@ -11,7 +11,7 @@ export const Footer = () => {
         backgroundSize: "cover",
       }}
     >
-      <MaxWidthWrapper className="grid w-full place-items-center bg-gradient-to-b from-transparent from-[50%] to-secondary to-[50%] lg:place-items-end">
+      <MaxWidthWrapper className="grid w-full place-items-center bg-gradient-to-b from-transparent from-[65%] to-secondary to-[65%] lg:place-items-end">
         <div className="grid pb-2">
           <div className="my-3 flex w-full justify-center gap-8 justify-self-end">
             <ContactIcons />

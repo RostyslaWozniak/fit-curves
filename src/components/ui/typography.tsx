@@ -17,7 +17,7 @@ export const typographyVariants = cva("", {
       h2: "text-4xl font-bold tracking-tight sm:text-5xl md:text-5xl text-center",
       h3: "text-3xl font-bold tracking-tight sm:text-4xl md:text-4xl text-center",
       h4: "text-xl font-bold tracking-tight sm:text-3xl md:text-3xl text-center",
-      p: "text-md md:text-xl",
+      p: "text-xl md:text-2xl",
     },
   },
 });

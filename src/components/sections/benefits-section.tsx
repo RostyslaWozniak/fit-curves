@@ -17,7 +17,7 @@ export const BenefitsSection = () => {
       >
         Advantages of Our Programs
       </motion.h2>
-      <div className="content grid grid-cols-1 place-items-center gap-y-10 md:grid-cols-2 xl:grid-cols-4">
+      <div className="content grid h-full grid-cols-1 place-items-center gap-y-10 md:grid-cols-2 xl:grid-cols-4">
         {benefitsData.map(({ title, icon: Icon }, index) => (
           <div
             key={title}

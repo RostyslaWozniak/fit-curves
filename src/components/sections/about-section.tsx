@@ -89,7 +89,7 @@ export const AboutSection = () => {
                     <p
                       className={cn(
                         typographyVariants({ variant: "p" }),
-                        "-translate-y-10 px-2 font-semibold lg:px-10",
+                        "-translate-y-10 px-2 text-center font-semibold md:text-start lg:px-10",
                       )}
                     >
                       {text}

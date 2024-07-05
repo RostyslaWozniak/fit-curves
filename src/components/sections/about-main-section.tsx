@@ -10,7 +10,7 @@ export const AboutMainSection = () => {
   useEffect(() => scrollTo({ top: 0 }), []);
   return (
     <section
-      className="sticky top-16"
+      className="sticky top-14 md:top-16"
       style={{
         backgroundImage: `url("/home-big.jpg")`,
         backgroundSize: "cover",
